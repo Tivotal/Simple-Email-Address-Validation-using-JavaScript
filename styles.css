@@ -1,0 +1,92 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #0041f5, #b9caf8);
+}
+
+.wrapper {
+  width: 400px;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0041f5;
+  text-align: center;
+}
+
+.wrapper .form .input-box {
+  position: relative;
+  margin: 10px 0;
+}
+
+.wrapper .form .input-box input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 20px;
+  color: #222;
+  transition: 0.3s;
+}
+
+.wrapper .form.valid .input-box input {
+  border-color: #46ea67;
+}
+
+.wrapper .form.invalid .input-box input {
+  border-color: #de0611;
+}
+
+.wrapper .form .input-box .icons i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.wrapper .form.valid .input-box .icons i.check {
+  opacity: 1;
+  color: #46ea67;
+}
+
+.wrapper .form.invalid .input-box .icons i.cross {
+  opacity: 1;
+  color: #de0611;
+}
+
+.wrapper .form .text {
+  font-size: 16px;
+}
+
+.wrapper .form.valid .text {
+  color: #46ea67;
+}
+
+.wrapper .form.invalid .text {
+  color: #de0611;
+}

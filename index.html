@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation - JavaScript</title>
+
+    <!--font awesome(for icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Email Valiadtion - JavaScript</h2>
+
+      <form action="#" class="form">
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter email address"
+            class="email-input"
+            onkeyup="validate()"
+          />
+          <div class="icons">
+            <i class="far fa-check-circle check"></i>
+            <i class="far fa-circle-xmark cross"></i>
+          </div>
+        </div>
+
+        <span class="text"></span>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
